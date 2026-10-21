@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Thư viện của tôi</string>
+
+    <string name="login_title">Thư viện của tôi</string>
+    <string name="login_subtitle">Mỗi cuốn sách là một chuyến đi</string>
+    <string name="login_username">Tên đăng nhập</string>
+    <string name="login_password">Mật khẩu</string>
+    <string name="login_submit">Đăng nhập</string>
+    <string name="login_error">Sai tên đăng nhập hoặc mật khẩu</string>
+    <string name="login_blank">Vui lòng nhập tên đăng nhập và mật khẩu</string>
+
+    <string name="library_title">Kệ sách của tôi</string>
+    <string name="library_empty">Kệ còn trống.\nThêm cuốn sách đầu tiên của bạn.</string>
+    <string name="library_add">+ Thêm sách</string>
+    <string name="library_hint">Chạm vào một cuốn sách để mở</string>
+
+    <string name="add_title">Thêm sách mới</string>
+    <string name="add_book_title">Tên sách</string>
+    <string name="add_author">Tác giả</string>
+    <string name="add_genre">Thể loại</string>
+    <string name="add_status">Tình trạng đọc</string>
+    <string name="add_rating">Đánh giá</string>
+    <string name="add_note">Ghi chú</string>
+    <string name="status_unread">Chưa đọc</string>
+    <string name="status_reading">Đang đọc</string>
+    <string name="status_read">Đã đọc</string>
+    <string-array name="genres">
+        <item>Văn học</item>
+        <item>Khoa học</item>
+        <item>Công nghệ</item>
+        <item>Kỹ năng sống</item>
+        <item>Khác</item>
+    </string-array>
+    <string name="add_save">Lưu sách</string>
+    <string name="required">Không được để trống</string>
+    <string name="rating_value">%1$d / 5 sao</string>
+    <string name="rating_badge">%1$d/5</string>
+
+    <string name="detail_title">Chi tiết sách</string>
+    <string name="detail_author_genre">%1$s  ·  %2$s</string>
+    <string name="detail_mark_read">Đánh dấu đã đọc</string>
+    <string name="detail_back">Quay lại</string>
+    <string name="detail_delete">Xóa sách</string>
+    <string name="detail_rating_changed">Đã cập nhật đánh giá</string>
+    <string name="detail_marked_read">Đã đánh dấu là đã đọc</string>
+    <string name="detail_deleted">Đã xóa sách khỏi kệ</string>
+    <string name="detail_empty_note">Chưa có ghi chú</string>
+    <string name="confirm_delete">Xóa cuốn sách này khỏi kệ?</string>
+    <string name="cancel">Hủy</string>
+    <string name="delete">Xóa</string>
+    <string name="shelf_spine">Sách %1$s</string>
+</resources>

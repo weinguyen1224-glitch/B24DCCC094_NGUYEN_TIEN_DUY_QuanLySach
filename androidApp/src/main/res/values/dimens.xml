@@ -1,0 +1,16 @@
+<resources>
+    <dimen name="cover_width">168dp</dimen>
+    <dimen name="cover_height">210dp</dimen>
+    <dimen name="cover_padding">12dp</dimen>
+    <dimen name="cover_radius">6dp</dimen>
+    <dimen name="shelf_inset">8dp</dimen>
+    <dimen name="shelf_row_top">10dp</dimen>
+    <dimen name="shelf_height">150dp</dimen>
+    <dimen name="shelf_thickness">20dp</dimen>
+    <dimen name="shelf_lip">6dp</dimen>
+    <dimen name="spine_width">44dp</dimen>
+    <dimen name="spine_gap">1dp</dimen>
+    <dimen name="spine_inset">2dp</dimen>
+    <dimen name="open_book_lift">5dp</dimen>
+    <dimen name="open_book_pages">6dp</dimen>
+</resources>

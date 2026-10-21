@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_toolbar" />
+
+    <ScrollView style="@style/FormScroll">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/Label"
+                android:layout_marginTop="4dp"
+                android:text="@string/add_book_title" />
+
+            <EditText
+                android:id="@+id/etTitle"
+                style="@style/Field"
+                android:hint="@string/add_book_title"
+                android:inputType="textCapSentences"
+                android:maxLines="1" />
+
+            <TextView
+                style="@style/Label"
+                android:text="@string/add_author" />
+
+            <EditText
+                android:id="@+id/etAuthor"
+                style="@style/Field"
+                android:hint="@string/add_author"
+                android:inputType="textPersonName"
+                android:maxLines="1" />
+
+            <TextView
+                style="@style/Label"
+                android:text="@string/add_genre" />
+
+            <Spinner
+                android:id="@+id/spGenre"
+                style="@style/Pick" />
+
+            <TextView
+                style="@style/Label"
+                android:text="@string/add_status" />
+
+            <RadioGroup
+                android:id="@+id/rgStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/rbUnread"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:checked="true"
+                    android:buttonTint="@color/brass"
+                    android:text="@string/status_unread"
+                    android:textColor="@color/ink"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/rbReading"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:buttonTint="@color/brass"
+                    android:text="@string/status_reading"
+                    android:textColor="@color/ink"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/rbRead"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:buttonTint="@color/brass"
+                    android:text="@string/status_read"
+                    android:textColor="@color/ink"
+                    android:textSize="15sp" />
+            </RadioGroup>
+
+            <TextView
+                style="@style/Label"
+                android:text="@string/add_rating" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <RatingBar
+                    android:id="@+id/ratingBar"
+                    style="@style/Rating" />
+
+                <TextView
+                    android:id="@+id/tvRating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:textColor="@color/ink_soft"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/Label"
+                android:text="@string/add_note" />
+
+            <EditText
+                android:id="@+id/etNote"
+                style="@style/Field"
+                android:gravity="top|start"
+                android:hint="@string/add_note"
+                android:inputType="textMultiLine|textCapSentences"
+                android:minLines="4"
+                android:paddingTop="14dp"
+                android:paddingBottom="14dp"
+                android:scrollbars="vertical" />
+
+            <Button
+                android:id="@+id/btnSave"
+                style="@style/PrimaryButton"
+                android:layout_marginTop="28dp"
+                android:text="@string/add_save" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

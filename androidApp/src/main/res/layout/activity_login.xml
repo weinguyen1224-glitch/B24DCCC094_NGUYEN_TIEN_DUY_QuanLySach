@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/FormScroll">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_marginTop="64dp"
+            android:background="@drawable/bg_brass"
+            android:contentDescription="@string/login_title"
+            android:padding="24dp"
+            android:src="@drawable/ic_book"
+            android:tint="@color/walnut" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="serif"
+            android:text="@string/login_title"
+            android:textColor="@color/ink"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/login_subtitle"
+            android:textColor="@color/ink_soft"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/etUsername"
+            style="@style/Field"
+            android:layout_marginTop="36dp"
+            android:autofillHints="username"
+            android:hint="@string/login_username"
+            android:inputType="text"
+            android:maxLines="1" />
+
+        <EditText
+            android:id="@+id/etPassword"
+            style="@style/Field"
+            android:layout_marginTop="12dp"
+            android:autofillHints="password"
+            android:hint="@string/login_password"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"
+            android:maxLines="1" />
+
+        <TextView
+            android:id="@+id/tvError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="4dp"
+            android:textColor="@color/error"
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btnLogin"
+            style="@style/PrimaryButton"
+            android:layout_marginTop="20dp"
+            android:text="@string/login_submit" />
+    </LinearLayout>
+</ScrollView>
